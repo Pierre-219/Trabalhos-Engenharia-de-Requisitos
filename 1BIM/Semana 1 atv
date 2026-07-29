@@ -1,0 +1,9 @@
+Em um E-commerce fictício, o cliente pediu “um checkout simples”. Isso pode significar compra em 1 clique ou um formulário completo - qual desses o time deveria construir?
+O time não deve assumir nenhuma das opções. Antes de desenvolver, é necessário conversar com o cliente e levantar os 
+requisitos para entender exatamente o que ele quis dizer com "checkout simples".
+Assim, evita-se criar uma funcionalidade diferente da esperada.
+
+Analogia da casa sem planta, construir um software sem levantar requisitos é como erguer uma casa sem projeto arquitetônico. Que problemas apareceriam nesse cenário?
+Sem o levantamento de requisitos, podem ocorrer erros, retrabalho, aumento de custos, atrasos no projeto e um sistema que não atende às necessidades do cliente. 
+Assim como uma casa sem planta pode apresentar problemas estruturais, um software sem planejamento pode ficar incompleto ou funcionar de forma inadequada.
+
