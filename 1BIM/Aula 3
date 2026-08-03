@@ -1,1 +1,37 @@
+# Reflita
+Como vocês testariam se este requisito foi atendido? (usar em cada exemplo apresentado).
+Esse requisito poderia ser interpretado de mais de um jeito? Por quem, e como?
+
+O sistema deve permitir o cadastro de novos livros pelo bibliotecário.
+RF01 – O sistema deve permitir o cadastro de novos livros pelo bibliotecário.
+Como testar: Logar como bibliotecário, preencher os dados de um livro novo (título, autor, ISBN, etc.) e verificar se ele aparece salvo no sistema. Também testar se um usuário comum (não bibliotecário) é bloqueado de cadastrar.
+Interpretação dupla: Pode ser interpretado de forma diferente quanto a quais campos são obrigatórios no cadastro. O bibliotecário pode entender que só título e autor bastam, enquanto o desenvolvedor pode achar que ISBN também é obrigatório — gerando divergência sobre quando o cadastro é considerado "completo".
+
+RF02 – O sistema deve permitir a busca de livros por título, autor ou ISBN.
+
+Como testar: Fazer buscas usando cada um dos três critérios separadamente (só título, só autor, só ISBN) e verificar se retorna o resultado correto. Testar também busca parcial (ex: só uma palavra do título).
+Interpretação dupla: Pode gerar dúvida se a busca deve aceitar termos parciais/incompletos ou só o valor exato. Um usuário pode esperar digitar "Harry" e achar "Harry Potter", enquanto o sistema pode ter sido especificado pra aceitar só o título completo.
+
+RF03 – O sistema deve registrar a data de devolução prevista ao realizar um empréstimo.
+
+Como testar: Realizar um empréstimo e conferir se a data de devolução aparece corretamente calculada e salva no registro do empréstimo.
+Interpretação dupla: Pode ser interpretado diferente quanto a quantos dias contam como prazo padrão — 7 dias, 14 dias, 30 dias? Isso pode variar entre o que o bibliotecário espera (baseado na política real da biblioteca) e o que o desenvolvedor assumiu ao implementar.
+
+RF04 – O sistema deve bloquear novos empréstimos para usuários com pendências.
+
+Como testar: Criar um usuário com uma pendência (livro atrasado ou multa) e tentar fazer um novo empréstimo pra esse usuário, verificando se o sistema bloqueia.
+Interpretação dupla: Pode ser interpretado diferente quanto ao que conta como "pendência" — só livro atrasado, ou também multa não paga? O bibliotecário pode considerar as duas coisas, enquanto o requisito, do jeito que tá escrito, não deixa isso claro.
+
+# Mais um exemplo 
+Pensem em um app de transporte (estilo Uber/99). Quais são 2 ou 3 requisitos funcionais óbvios desse sistema?
+RF01 – O sistema deve permitir que o passageiro solicite uma corrida informando local de origem e destino.
+RF02 – O sistema deve permitir que o passageiro acompanhe em tempo real a localização do motorista até a chegada.
+RF03 – O sistema deve permitir que o passageiro avalie a viagem (nota e comentário) ao final da corrida.
+
+# Exercicio
+Para um sistema de delivery de comida, escrevam 4 requisitos funcionais seguindo o modelo “O sistema deve…”. Depois, troquem com a dupla ao lado e apontem se algum requisito ficou ambíguo ou difícil de testar.
+RF01 – O sistema deve permitir que o cliente busque restaurantes por nome, categoria ou localização.
+RF02 – O sistema deve permitir que o cliente adicione itens ao carrinho e finalize o pedido com forma de pagamento escolhida.
+RF03 – O sistema deve notificar o cliente sobre as mudanças de status do pedido (preparando, saiu para entrega, entregue).
+RF04 – O sistema deve permitir que o cliente avalie o pedido e o entregador ao final da entrega.
 
