@@ -1,5 +1,29 @@
 # Reflexão
 Em que momento é mais fácil perceber que ‘esquecemos’ um requisito: início, meio ou fim do projeto? Por quê?
+Geralmente é mais no meio ou no final do projeto, pois no início o projeto ainda está se moldando, e dificilmente sabemos de um requisito que só vai ser necessário mais pra frente.
+No meio ou no final, os requisitos esquecidos costumam aparecer por falta de comunicação com o cliente, já que nem sempre conseguimos levantar tudo que ele realmente precisa logo no começo.
 Vocês conseguem pensar em um app do dia a dia em que uma dessas 5 atividades parece ter sido malfeita?
+Um exemplo real é o app do Muffato. Segundo reclamações de usuários, toda vez que o app passa por uma atualização, alguma funcionalidade que antes funcionava para de funcionar — como login, redefinição de senha ou pagamento de boleto.
+Isso indica uma falha na atividade de Gerenciamento de Requisitos, que deveria controlar as mudanças ao longo do projeto de forma que novas versões não quebrem funcionalidades já existentes.
 # Atividade em Sala
 Para um sistema de agendamento de consultas médicas, listem em que ordem vocês fariam as 5 atividades do processo de ER e apontem 1 momento em que provavelmente seria necessário voltar a uma etapa anterior.
+## Elicitação – 
+Conversar com os stakeholders (pacientes, recepcionistas, médicos, administração da clínica) pra descobrir as necessidades: agendar, cancelar, remarcar consulta, escolher especialidade, receber lembrete, etc.
+
+## Análise – 
+Organizar tudo que foi levantado e resolver conflitos. Por exemplo, o médico pode querer bloquear horários pra emergência, enquanto a recepção quer liberar todos os horários pra agendamento — aqui entra em cena entender essas prioridades e alinhar.
+
+## Especificação – 
+Documentar formalmente os requisitos: "o sistema deve permitir agendamento com até X dias de antecedência", "o sistema deve enviar lembrete 24h antes por SMS/e-mail", etc.
+
+## Validação –
+Confirmar com os stakeholders (médicos, recepção, um grupo de pacientes) se aquilo que foi especificado realmente atende o que eles precisam, antes de começar a desenvolver.
+
+## Gerenciamento –
+Controlar mudanças ao longo do projeto, tipo se no meio do desenvolvimento a clínica decidir incluir teleconsulta ou mudar a política de cancelamento.
+
+Momento que seria necessario voltar
+Durante a validação, o cliente citou que o sistema não tinha opção de remarcar uma consulta, permitindo apenas cancelar e criar uma nova do zero.
+Isso mostra que esse requisito não foi levantado antes, sendo necessário voltar para a etapa de elicitação para captar essa necessidade e refazer a análise e especificação antes de validar novamente.
+
+
